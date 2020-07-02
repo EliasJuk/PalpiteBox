@@ -2,7 +2,7 @@
     <img alt="palpite" title="#palpite" src="readme/logo_paplpitebox 1.png"/>
 </h4>
 
-<h4>🚀 Aplicação desenvolvida durante a semana Fullstack Master do DevPleno 🚀</h4>
+<h3 align="center">🚀 Aplicação desenvolvida durante a semana Fullstack Master do DevPleno 🚀</h3>
 ---
 <!--
 <h4 align="center">
@@ -10,6 +10,25 @@
     <img alt="palpite" title="#palpite" src="readme/logo_devpleno 1.png"/>
 </h4>
 -->
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EliasJuk/PalpiteBox">	
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/EliasJuk/PalpiteBox">
+	
+  <a href="https://www.linkedin.com/in/eliaspjuk/">
+    <img alt="Made by EliasJuk" src="https://img.shields.io/badge/made%20by-EliasJuk-%2304D361">
+  </a>
+  
+  <a href="https://github.com/EliasJuk/PalpiteBox/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/EliasJuk/PalpiteBox">
+  </a>
+  
+  <a href="https://github.com/EliasJuk/PalpiteBox/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/EliasJuk/PalpiteBox">
+  </a>
+  
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"> 
+<p>
 
 ## 🔖 Layout
 
