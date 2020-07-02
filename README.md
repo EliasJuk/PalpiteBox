@@ -3,7 +3,9 @@
 </h4>
 
 <h3 align="center">🚀 Aplicação desenvolvida durante a semana Fullstack Master do DevPleno 🚀</h3>
+
 ---
+
 <!--
 <h4 align="center">
     <img alt="palpite" title="#palpite" src="readme/logo_semana_fsm 1.png"/>
@@ -29,6 +31,14 @@
   
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen"> 
 <p>
+
+<p align="center">
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-How-to-contribute">How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
+
+---
 
 ## 🔖 Layout
 
