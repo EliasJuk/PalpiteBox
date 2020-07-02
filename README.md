@@ -1,6 +1,6 @@
-# PalpiteBox
-
-
+<h4 align="center">
+    <img alt="palpite" title="#palpite" src="readme/logo_paplpitebox 1.png"/>
+</h4>
 
 
 ---
