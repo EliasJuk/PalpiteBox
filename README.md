@@ -2,14 +2,14 @@
     <img alt="palpite" title="#palpite" src="readme/logo_paplpitebox 1.png"/>
 </h4>
 
-🚀 Aplicação desenvolvida durante a semana Fullstack Master do DevPleno 🚀
+<h4>🚀 Aplicação desenvolvida durante a semana Fullstack Master do DevPleno 🚀</h4>
 ---
-
+<!--
 <h4 align="center">
     <img alt="palpite" title="#palpite" src="readme/logo_semana_fsm 1.png"/>
     <img alt="palpite" title="#palpite" src="readme/logo_devpleno 1.png"/>
 </h4>
-
+-->
 
 ## 🔖 Layout
 
