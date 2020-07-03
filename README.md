@@ -46,6 +46,19 @@ Para acessar o layout utilize a ferramenta [Figma](https://www.figma.com/file/eO
 
 ---
 
+## :rocket: Technologies
+
+This project was developed with the following technologies:
+
+- [React](https://reactjs.org)
+- [Next.js](https://nextjs.org/)
+- [Node.js](https://nodejs.org/en/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [PostCSS](https://postcss.org/)
+- [Autoprefixer](https://github.com/postcss/autoprefixer)
+
+---
+
 ## ❔ How to contribute
 
 - Make a fork;
