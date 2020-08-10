@@ -59,6 +59,32 @@ This project was developed with the following technologies:
 
 ---
 
+---
+
+## ❔ How To Use
+
+<p>To clone and run this application, you'll need Git, [Node.js][nodejs] installed on your computer.</p>
+
+From your command line:
+
+### ❕ Install API
+
+```bash
+# Clone this repository
+$ git clone https://github.com/EliasJuk/PalpiteBox
+
+# Go into the repository
+$ cd PalpiteBox/project
+
+# Install dependencies
+$ npm install
+
+# Run the API
+$ npm run dev
+```
+
+---
+
 ## ❔ How to contribute
 
 - Make a fork;
