@@ -59,8 +59,6 @@ This project was developed with the following technologies:
 
 ---
 
----
-
 ## ❔ How To Use
 
 <p>To clone and run this application, you'll need Git, [Node.js][nodejs] installed on your computer.</p>
