@@ -56,7 +56,10 @@ This project was developed with the following technologies:
 - [Tailwindcss](https://tailwindcss.com/)
 - [PostCSS](https://postcss.org/)
 - [Autoprefixer](https://github.com/postcss/autoprefixer)
+- [swr](https://github.com/vercel/swr)
+- [Moment](https://momentjs.com/)
 
+>  https://console.developers.google.com/
 ---
 
 ## ❔ How To Use

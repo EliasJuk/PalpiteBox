@@ -1,24 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 
 const Pesquisa = () => {
-  const save = async () => {
-    const form = {
-      Nome: 'aaa',
-      Email: 'ccc',
-      Whatsapp: 'vvv'
-    }
-    const response = await fetch('/api/save', {
-      method: 'POST',
-      body: JSON.stringify(form)
-    })
-    try{
-      const data = await response.json({
-        
-      })
-    }catch(err){
+  const [form, setForm] = useState({
+    Nome: '',
+    Email: '',
+    Whatsapp: ''
+  }) 
 
+  const save = async () => {
+    try{
+      const response = await fetch('/api/save', {
+        method: 'POST',
+        body: JSON.stringify(form)
+      })      
+
+      const data = await response.json()
+      console.log(data)
+    }catch(err){
+      
     }
+  }
+
+  const onChange = evt => {
+    const value = evt.target.value
+    const key = evt.target.name
+    setForm(old => ({
+      ...old,
+      [key]: value
+
+    }))
   }
 
   return (
@@ -26,10 +37,19 @@ const Pesquisa = () => {
       <h1 className='text-center font-bold my-4 text-2xl'>Críticas e sugestões</h1>
       <p className='text-center mb-6'>O restaurante X sempre busca por atender melhor seus clientes,<br/> Por isso, estamos abertos a ouvir a sua opnião.</p>
       <div className='w-1/5 mx-auto'>
-        <label className='font-bold'>Seu nome:</label>
-        <input type="text" className='p-4 block shadow bg-blue-100 my-2 rounded'/>
+        <label className='font-bold'>Nome:</label>
+        <input type="text" className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Nome' onChange={onChange} name="Nome" value={form.Nome}/>
+        
+        <label className='font-bold'>Email::</label>
+        <input type="text" className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Email' onChange={onChange} name="Email" value={form.Email}/>
+        
+        <label className='font-bold'>Whatsapp:</label>
+        <input type="text" className='p-4 block shadow bg-blue-100 my-2 rounded' placeholder='Whatsapp' onChange={onChange} name="Whatsapp" value={form.Whatsapp}/>
 
         <button onClick={save} className='bg-blue-400 px-12 py-4 font-bold rounded-lg shadow-lg hover:shadow'>Salvar</button>
+        <pre>
+          {JSON.stringify(form, null, 2)}
+        </pre>
       </div>    
     </div>
   )

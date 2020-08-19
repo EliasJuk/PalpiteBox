@@ -1,6 +1,38 @@
+import { GoogleSpreadsheet } from 'google-spreadsheet'
+import credentials from '../../credentials.json'
+
+import dotenv from 'dotenv'
+dotenv.load()
+
+const doc = new GoogleSpreadsheet(process.GoogleSpreadsheet)
+
+
 export default async (req, res) => {
-  res.end(JSON.stringify({
-    showCoupon: true,
-    message: ''
-  }))
+  try{
+    await doc.useServiceAccountAuth(credentials)
+    await doc.loadInfo()
+    //console.log(doc.title)
+
+    const sheet = doc.sheetsByIndex[2]
+    await sheet.loadCells('A2:B2')
+    //console.log(sheet.title)
+
+    const MostrarPromocaoCell = sheet.getCell(1, 0)
+    //console.log(MostrarPromocaoCell.value)
+
+    const TextoCell = sheet.getCell(1, 1)
+    //console.log(TextoCell.value)
+
+    res.end(JSON.stringify({
+      showCoupon: MostrarPromocaoCell.value === 'VERDADEIRO',
+      message: TextoCell.value
+
+    }))
+  }catch{
+    res.end(JSON.stringify({
+      showCoupon: false,
+      message: ''
+    }))
+    //console.log(err)
+  }
 }
