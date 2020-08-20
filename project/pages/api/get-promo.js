@@ -1,15 +1,15 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet'
-import credentials from '../../credentials.json'
 
-import dotenv from 'dotenv'
-dotenv.load()
-
-const doc = new GoogleSpreadsheet(process.GoogleSpreadsheet)
+const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
 
 
 export default async (req, res) => {
   try{
-    await doc.useServiceAccountAuth(credentials)
+    //await doc.useServiceAccountAuth(credentials)
+    await doc.useServiceAccountAuth({
+      client_email: process.env.SHEET_CLIENT_EMAIL,
+      private_key: process.env.SHEET_CLIENT_KEY
+    })
     await doc.loadInfo()
     //console.log(doc.title)
 
